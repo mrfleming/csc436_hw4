@@ -1,7 +1,7 @@
 # TodoApp
-I created a firebase account but was having trouble pushing and pulling information from firebase to the app.  I copied the API keys but I was having trouble reading the supporting documentation to get it all up and going.  I included a screenshot so you can see my account and DB.
+I created a firebase account online.  I read the link, but that tutorial was an old API, like 2 years old, so I ended up getting confused. I was having trouble pushing and pulling information from firebase to the app.  I was able to copy the API keys but I don't think that was the issue.  I included a screenshot so you can see that I created my account and database.
 
-For the second I was able to configure the router, I was able to load Todos, I was able to add new Todos, but I was not able to update them and have the buttons change active colors.
+For the second assignment I had similar Firebase problems.  I was able to configure the router, I was able to load Todos, I was able to add new Todos, but I was not able to update them and have the buttons change active colors.  Again I feel like I need more concrete and explicit patterns for how to call information down from Firebase.  I am going to keep trying to figure it out in the mean time.
 
 ## Compile
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
