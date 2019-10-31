@@ -1,0 +1,22 @@
+.urgent{
+    background-color: crimson;
+    color:whitesmoke;
+}
+
+.days{
+    background-color: darkorange;
+    color:whitesmoke;
+}
+
+.week{
+    background-color:gold;
+    color:whitesmoke;
+}
+
+.todoRow{
+    display: flex;
+}
+
+.f1{flex:1;}
+.f2{flex:2;}
+.f3{flex:3;}
