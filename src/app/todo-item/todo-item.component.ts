@@ -14,9 +14,9 @@ export class TodoItemComponent implements OnInit {
 
   constructor(private service: TodoService) {}
 
-  update(event, td: Todo) {
+  updateTodo(event, td) {
     const due = event.target.value;
-    this.service.updateTodo(td.key, due);
+    this.service.updateTodo(td.key, { dueDate: due});
   }
   due(): string {
     return this.todo.dueDate;

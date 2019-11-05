@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from '../todo-service.service';
 import { Todo } from '../todo-item/todo.model';
+import { map } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-todo-list',
@@ -20,7 +22,14 @@ export class TodoListComponent implements OnInit {
   }
 
   getTodos() {
-    this.todoList = this.service.getTodos();
+    this.service.getTodos().snapshotChanges()
+      .pipe(
+        map( data => data.map( d => ({
+          key: d.payload.key, ...d.payload.val()
+        })))
+      ).subscribe(todos => {
+        this.todoList = todos;
+      });
   }
 
 }

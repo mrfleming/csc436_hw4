@@ -7,7 +7,8 @@
     </div>
     <div>
         <app-todo-item 
-            *ngFor="let td of todoList"
+            *ngFor="let td of todoList; let i = index;"
+            [attr.data-index]="i"
             [todo] = td>
         </app-todo-item>
     </div>

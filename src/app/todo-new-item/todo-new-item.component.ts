@@ -9,19 +9,15 @@ import { TodoService } from '../todo-service.service';
 })
 export class TodoNewItemComponent implements OnInit {
 
-  id = this.service.getTodos().length + 1;
-
   constructor(private service: TodoService) { }
 
   ngOnInit() {
   }
 
   submit(text: HTMLInputElement, dueDate: HTMLInputElement): void {
-    const freshTodo = new Todo(this.id, text.value, dueDate.value);
+    const freshTodo = new Todo(text.value, dueDate.value);
     console.table(freshTodo);
     this.service.addTodo(freshTodo);
-    // increment count
-    this.id++;
     // clear text fields
     text.value = '';
     dueDate.value = '';

@@ -13,6 +13,11 @@ import { TodoNewItemComponent } from './todo-new-item/todo-new-item.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { TodoService } from './todo-service.service';
+import { environment } from 'src/environments/environment';
+
+// firebase
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 @NgModule({
   declarations: [
@@ -27,6 +32,8 @@ import { TodoService } from './todo-service.service';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
