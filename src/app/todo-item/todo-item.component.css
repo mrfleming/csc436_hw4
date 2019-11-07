@@ -15,6 +15,7 @@
 
 .todoRow{
     display: flex;
+    height: 60px;
 }
 
 .f1{flex:1;}
