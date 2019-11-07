@@ -5,6 +5,7 @@
 }
 
 .new-component, .main-content{
+    border-radius: 8px;
     margin-bottom: 32px;
-    background-color:lightblue;
+    background-color: aliceblue;
 }
