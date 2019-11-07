@@ -1,0 +1,10 @@
+.main-content{
+    min-width: 480px;
+    width:90%;
+    margin:0 auto;
+}
+
+.new-component, .main-content{
+    margin-bottom: 32px;
+    background-color:lightblue;
+}

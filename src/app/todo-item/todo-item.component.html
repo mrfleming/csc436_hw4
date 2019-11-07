@@ -1,8 +1,8 @@
 <!-- Generate rows of Todo Items -->
 <div class="todoRow">
-    <div class="f1">{{todo.key}}</div>  
-    <div class="f2">{{todo.text}}</div>
-    <div class="f1" (click)="updateTodo($event,todo)">
+    <div class="p20">{{todo.key}}</div>  
+    <div class="p40">{{todo.text}}</div>
+    <div class="p40" (click)="updateTodo($event,todo)">
         <button class="btn" [ngClass]="{'urgent': todo.dueDate == 'urgent' }" value="urgent">urgent</button>
         <button class="btn" [ngClass]="{'days': todo.dueDate == 'days' }" value="days">days</button>
         <button class="btn" [ngClass]="{'week': todo.dueDate == 'week' }" value="week">week</button>

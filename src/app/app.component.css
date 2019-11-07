@@ -4,8 +4,10 @@ body{
 }
 header{
     background-color: aliceblue;
-    padding:0;  
+    padding:0;
+    padding-top:12px;  
     margin:0;
+    height: 80px;
 }
 .title{
     margin-top:0;

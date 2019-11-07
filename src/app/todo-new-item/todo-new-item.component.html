@@ -1,11 +1,11 @@
 <form>
    <div class="form-group">
         <label for="todoText">Add a new Todo task</label>
-        <input type="text" id="todoText" name="todoText" #text>
+        <input class="form-control sm" type="text" id="todoText" name="todoText" #text>
    </div>
    <div class="form-group">
         <label for="todoDueDate">Specify a Due Date</label>
-        <input type="text" id="todoDueDate" name="todoDueDate" placeholder="urgent, days, or week" #dueDate>
+        <input class="form-control sm" type="text" id="todoDueDate" name="todoDueDate" placeholder="urgent, days, or week" #dueDate>
    </div>
     <button class="btn btn-info" (click)="submit(text,dueDate)">Add +</button>
 </form>
