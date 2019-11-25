@@ -11,6 +11,7 @@ import { TodoService } from '../todo-service.service';
 export class TodoItemComponent implements OnInit {
 
   @Input() todo: Todo;
+  @Input() i: any;
 
   constructor(private service: TodoService) {}
 
