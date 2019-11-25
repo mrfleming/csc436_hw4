@@ -8,9 +8,7 @@
     <div>
         <app-todo-item 
             *ngFor="let td of todoList; let i = index;"
-            [attr.data-index]="i"
-            [todo] = td
-            [i] = i>
+            [todo] = td [i] = i>
         </app-todo-item>
     </div>
 </section>
