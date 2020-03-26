@@ -19,6 +19,13 @@ export class TodoItemComponent implements OnInit {
     const due = event.target.value;
     this.service.updateTodo(td.key, { dueDate: due});
   }
+
+  deleteTodo(todo) {
+    this.service.deleteTodo(todo.key)
+      .catch(err => console.log(err));
+
+  }
+
   due(): string {
     return this.todo.dueDate;
   }

@@ -7,7 +7,7 @@ import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 })
 
 export class TodoService {
-  database: Todo[];
+
   fireDatabase: AngularFireList<Todo>;
   fireDBPath = 'todoList';
 
@@ -36,6 +36,9 @@ export class TodoService {
   getTodos(): AngularFireList<Todo> {
     return this.fireDatabase;
   }
-  // method for later
-  // deleteTodo
+
+
+  deleteTodo(key: string): Promise<void> {
+    return this.fireDatabase.remove(key);
+  }
 }
